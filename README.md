@@ -1,4 +1,4 @@
-Pedersen hash function deployment on EVM chains at `0x7eaE9c24323C8101C9B798319a4131d71B5af7fF`.
+Poseidon hash function deployment on EVM chains at `0x7eaE9c24323C8101C9B798319a4131d71B5af7fF`.
 
 * [Sepolia](https://sepolia.etherscan.io/address/0x7eaE9c24323C8101C9B798319a4131d71B5af7fF)
 * [Holeski](https://holesky.etherscan.io/address/0x7eaE9c24323C8101C9B798319a4131d71B5af7fF)
