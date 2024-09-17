@@ -15,6 +15,9 @@ Poseidon hash function deployment on EVM chains at `0x7eaE9c24323C8101C9B798319a
 | NPM library | WIP |
 | Mutiple parameters | WIP |
 
+## Why Poseidon Hash?
+
+Poseidon is a very popular hashing function in the Ethereum ecosystem, particularly in privacy-preserving applications. It offers significant advantages by reducing zk-SNARK circuit complexity, size and proof generation time. This library provides an easy-to-use interface, enabling developers to implement Poseidon easly in their projects.
 
 ## Usage
 
@@ -28,7 +31,7 @@ import {IPoseidon, PoseidonLib} from "https://github.com/Turupawn/poseidon-addre
 
 contract MyContract {
     function hash(uint a, uint b) public view returns(uint) {
-        return IPoseidon(PoseidonLib.getAddress()).poseidonHash([a, b]);
+        return IPoseidon(PoseidonLib.getAddress()).poseidon([a, b]);
     }
 }
 ```
@@ -40,7 +43,7 @@ contract MyContract {
 pragma solidity >=0.7.0 <0.9.0;
 
 interface IPoseidon {
-    function poseidon(uint[2] memory inputs) external view returns(uint[1] memory output);
+    function poseidon(uint[2] memory inputs) external view returns(uint output);
 }
 ```
 
