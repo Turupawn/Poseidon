@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Sepolia",
+    "chainId": 11155111,
+    "url": "https://sepolia.etherscan.io/address/0x7eaE9c24323C8101C9B798319a4131d71B5af7fF"
+  },
+  {
+    "name": "Holesky",
+    "chainId": 17000,
+    "url": "https://holesky.etherscan.io/address/0x7eaE9c24323C8101C9B798319a4131d71B5af7fF"
+  },
+  {
+    "name": "Scroll Sepolia Testnet",
+    "chainId": 534351,
+    "url": "https://sepolia.scrollscan.com/address/0x7eaE9c24323C8101C9B798319a4131d71B5af7fF"
+  }
+]
