@@ -29,10 +29,15 @@ const deployContractWithCreate2 = async (bytecode, salt, provider) => {
   return address;
 };
 
-async function deployPoseidon(parameterAmount) {
-  const bytecode = createCode(parameterAmount);
-  const salt = process.env.SALT;  // Generate a unique salt or retrieve from environment variable
-  await deployContractWithCreate2(bytecode, salt, process.env.RPC_URL);
+async function deployPoseidon() {
+
+  for(let i=1; i<=5; i++)
+  {
+    console.log("Deploying Poseidon with " + i + " inputs")
+    const bytecode = createCode(i);
+    const salt = process.env.SALT;  // Generate a unique salt or retrieve from environment variable
+    await deployContractWithCreate2(bytecode, salt, process.env.RPC_URL);
+  }
 }
 
-deployPoseidon(2).catch(console.error);
+deployPoseidon();
